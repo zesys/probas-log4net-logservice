@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>pins</Authors>
+    <Company>zesys</Company>
+    <Copyright>zesys</Copyright>
+	<Owners>zesys</Owners>
+	<RepositoryUrl></RepositoryUrl>
+    <Description>log4net 基于阿里云日志服务组件</Description>
+	<Title>Probas.log4net.LogService</Title>
+	<PackageId>Probas.log4net.LogService</PackageId>
+	<PackageTags>.NET Core</PackageTags>
+	<Product>Probas.log4net.LogService</Product>
+	<PackageLicenseFile>License.txt</PackageLicenseFile>
+	<PackageProjectUrl>https://github.com/zesys/probas-log4net-logservice</PackageProjectUrl>
+	<PackageReleaseNotes>log4net 基于阿里云日志服务组件</PackageReleaseNotes>
+	<Version>0.0.1-alpha</Version>
+  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.6.3" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Probas.Aliyun.LogService" Version="1.0.0-alpha" />
+  </ItemGroup>
+
+</Project>
